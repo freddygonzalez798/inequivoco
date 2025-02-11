@@ -1,0 +1,55 @@
+/* Reset de estilos básicos */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables de colores y fuentes globales */
+:root {
+    --color-fondo-claro: #f4f4f4;
+    --color-texto-claro: #333;
+    --color-principal-claro: #007bff;
+    --color-secundario-claro: #6c757d;
+    --color-fondo-secundario-claro: #ffffff;
+    --color-borde-claro: #ccc;
+
+    --color-fondo-oscuro: #121212;
+    --color-texto-oscuro: #e4e4e4;
+    --color-principal-oscuro: #6200ea;
+    --color-secundario-oscuro: #bb86fc;
+    --color-fondo-secundario-oscuro: #333333;
+    --color-borde-oscuro: #444;
+
+    --fuente-principal: 'Arial', sans-serif;
+    --fuente-secundaria: 'Helvetica', sans-serif;
+    --tamano-fuente: 1rem;
+}
+
+/* Estilo base para todo el documento */
+body {
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-claro);
+    margin: 0;
+    padding: 0;
+}
+
+#main-content {
+    width: 100%;
+    height: 100vh;
+
+}
+
+#main-content>section {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* Centrado vertical */
+    justify-content: center;
+    /* Centrado horizontal */
+}

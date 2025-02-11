@@ -1,0 +1,20 @@
+<NombreDelProyecto>/
+│
+├── components/
+│   ├── header.html
+│   ├── navbar.html
+│   └── footer.html
+│
+├── css/
+│   ├── estiloglobales.css  <-- Aquí va tu archivo global de estilos
+│   ├── header.css
+│   ├── navbar.css
+│   └── footer.css
+│
+├── js/
+│   ├── main.js
+│   ├── header.js
+│   ├── navbar.js
+│   └── footer.js
+│
+├── index.html
