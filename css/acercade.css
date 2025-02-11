@@ -1,0 +1,65 @@
+/* Contenedor de las secciones */
+.section-container {
+    width: 100%;
+    height: 100vh;
+    padding: 45px;
+    /* background: #222; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
+}
+
+/* Encabezados */
+.section-title {
+
+    color: #f4c542;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #f4a742;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/* Listas */
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    background: #2a2a2a;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    color: #e0e0e0;
+}
+
+/* Párrafos */
+p {
+    font-size: 1em;
+    color: #d0d0d0;
+    margin-bottom: 10px;
+}
+
+/* Mejoras responsivas */
+@media (max-width: 768px) {
+    .section-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 1.4em;
+    }
+
+    .section-subtitle {
+        font-size: 1.1em;
+    }
+}

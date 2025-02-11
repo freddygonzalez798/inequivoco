@@ -5,7 +5,7 @@ nav {
     /* position: relative; */
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 9999;
 }
 
 nav ul {
@@ -44,6 +44,7 @@ nav ul li a:hover {
     font-size: 24px;
     cursor: pointer;
     padding: 10px;
+    z-index: 9998;
 }
 
 /* Responsividad: Menú hamburguesa */
@@ -56,6 +57,9 @@ nav ul li a:hover {
 
     .menu-toggle {
         display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
     }
 
     nav ul {
@@ -65,10 +69,13 @@ nav ul li a:hover {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
+        background: #575757;
+
     }
 
     nav ul.active {
-        max-height: 300px;
+        max-height: none;
+        height: 100vh;
         /* Altura suficiente para mostrar los elementos */
     }
 
