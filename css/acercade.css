@@ -1,65 +1,68 @@
-/* Contenedor de las secciones */
+/* Estilos generales */
 .section-container {
-    width: 100%;
     height: 100vh;
-    padding: 45px;
-    /* background: #222; */
-    /* border-radius: 10px; */
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.9), rgba(20, 20, 20, 0.95));
 }
 
-/* Encabezados */
+/* Títulos */
 .section-title {
-
-    color: #f4c542;
-    font-size: 1.6em;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #ff6f61;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .section-subtitle {
-    color: #f4a742;
-    font-size: 1.2em;
-    font-weight: 500;
-    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ff9f43;
 }
 
-/* Listas */
+/* Párrafos */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #d4d4d4;
+}
+
+/* Lista personalizada */
 .custom-list {
     list-style: none;
     padding: 0;
 }
 
-.custom-list li {
-    background: #2a2a2a;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    color: #e0e0e0;
+/* Imagen */
+.imagen-acercade-inicio {
+    display: block;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 4px solid #ff6f61;
+    box-shadow: 0 4px 20px rgba(255, 111, 97, 0.5);
+    transition: all 0.3s ease-in-out;
+    object-fit: cover;
+    /* Asegura que la imagen se recorte bien dentro del círculo */
+    background: rgba(0, 0, 0, 0.2);
+    /* Fondo oscuro para dar contraste */
 }
 
-/* Párrafos */
-p {
-    font-size: 1em;
-    color: #d0d0d0;
-    margin-bottom: 10px;
-}
-
-/* Mejoras responsivas */
-@media (max-width: 768px) {
-    .section-container {
-        margin: 20px;
-        padding: 15px;
-    }
-
-    .section-title {
-        font-size: 1.4em;
-    }
-
-    .section-subtitle {
-        font-size: 1.1em;
-    }
+.imagen-acercade-inicio:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 30px rgba(255, 111, 97, 0.7);
+    /* Sombra más pronunciada en hover */
 }
