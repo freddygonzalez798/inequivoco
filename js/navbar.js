@@ -8,12 +8,13 @@ document.querySelectorAll('nav ul li a').forEach(item => {
 
 function toggleMenu() {
     const menu = document.querySelector('nav ul');
-    menu.classList.toggle('active');
+    menu.classList.toggle('active'); // Cambia el estado del menú (mostrar/ocultar)
 
-    // Cierra el menú al hacer clic en un elemento del menú
-    document.querySelectorAll('nav ul li a').forEach(item => {
-        item.addEventListener('click', () => {
-            menu.classList.remove('active'); // Cierra el menú
-        });
+    // Delegación de eventos para manejar clics en los enlaces de manera eficiente
+    menu.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+            // Cerrar el menú cuando se hace clic en un enlace
+            menu.classList.remove('active');
+        }
     });
 }
