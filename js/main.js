@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     loadComponent("navbar", "components/navbar.html");
     loadComponent("acercade", "components/acercade.html");
     loadContent("components/inicio.html"); // Cargar la página de inicio por defecto
-    loadContent("components/acercadeinicio.html"); // Cargar la página de inicio por defecto
 });
 
 // Función para cargar solo el contenido principal sin recargar la página
