@@ -1,0 +1,56 @@
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas en pantallas grandes */
+    gap: 16px;
+    padding: 10px;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse sobre las imágenes */
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos del botón "Ver más" */
+#load-more {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 30px auto;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#load-more:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    #gallery {
+        grid-template-columns: 1fr;
+        /* 1 columna en pantallas muy pequeñas */
+    }
+}
