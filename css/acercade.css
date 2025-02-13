@@ -1,28 +1,32 @@
+/* Importar Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+}
+
+/* Contenedor principal */
 .section-container {
     height: 100vh;
-    /* Asegura que el contenedor ocupe toda la altura de la pantalla */
     width: 100%;
-    padding: 50px 20px 0;
+    padding: 60px 20px 0;
     color: #fff;
     text-align: center;
     background: url('/inequivoco/img/fotoinicioacercade.jpeg') no-repeat center center;
-    /* Imagen de fondo */
     background-size: cover;
-    /* Asegura que la imagen cubra todo el contenedor */
     position: relative;
-    /* Necesario para contener los elementos sobrepuestos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 /* Superposición oscura */
-.section-container>* {
-    position: relative;
-    /* Asegura que el texto se muestre encima de la superposición */
-    z-index: 1;
-    /* Asegura que el contenido esté encima de la superposición */
-}
-
-/* Fondo oscuro con opacidad */
 .section-container::after {
     content: '';
     position: absolute;
@@ -30,27 +34,66 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    /* Superposición oscura */
+    background: rgba(0, 0, 0, 0.6);
     z-index: 0;
-    /* Se pone detrás del contenido */
 }
 
-/* Títulos */
+/* Elementos sobre la superposición */
+.section-container>* {
+    position: relative;
+    z-index: 1;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título principal */
 .section-title {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    border-bottom: 2px solid #ff6f61;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #c9a773;
     display: inline-block;
     padding-bottom: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* Subtítulos */
+.section-subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 15px;
+    color: #c9a773;
 }
 
 /* Párrafos */
 p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #d4d4d4;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+/* Lista personalizada */
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    font-size: 18px;
+    padding: 5px 0;
+    color: #fff;
+    position: relative;
 }
