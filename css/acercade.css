@@ -39,6 +39,16 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.custom-list a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.custom-list a:hover {
+    color: #c9a773;
+}
+
 .custom-list li:last-child {
     border-bottom: none;
 }
