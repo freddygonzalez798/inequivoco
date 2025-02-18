@@ -49,6 +49,7 @@ function attachNavEvents() {
             const page = link.getAttribute("data-page"); // Obtener la ruta del enlace
             if (page) {
                 loadContent(page); // Cargar el contenido dinámicamente
+                console.log("hola");
             }
         });
     });

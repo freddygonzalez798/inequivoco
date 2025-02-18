@@ -3,6 +3,7 @@ document.querySelectorAll('nav ul li a').forEach(item => {
     item.addEventListener('click', event => {
         event.preventDefault(); 
         alert(`Has hecho clic en: ${item.textContent}`);
+        console.log("cliock");
     });
 });
 
@@ -18,3 +19,4 @@ function toggleMenu() {
         }
     });
 }
+
