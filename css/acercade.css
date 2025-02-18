@@ -48,7 +48,7 @@
 #historia {
     position: relative;
     /* Se asegura de que el pseudo-elemento ::after esté contenido */
-    background: url('/img/inicio.png') center/cover fixed no-repeat;
+    background: url('/inequivoco/img/inicio.png') center/cover fixed no-repeat;
     color: white;
     padding: 60px 20px 0;
 }
