@@ -4,17 +4,20 @@ NombreDelProyecto
 │   ├── header.html
 │   ├── navbar.html
 │   ├── acercade.html
+│   ├── mireproductor.html
 │   └── footer.html
 │
 ├── css/
 │   ├── estiloglobales.css  <-- Aquí va tu archivo global de estilos
 │   ├── header.css
 │   ├── navbar.css
+│   ├── mireproductor.css
 │   ├── acercade.css
 │   └── footer.css
 │
 ├── js/
 │   ├── main.js
+│   ├── mireproductor.js
 │   ├── header.js
 │   ├── acercade.js
 │   ├── navbar.js
